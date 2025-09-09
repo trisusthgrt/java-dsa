@@ -46,10 +46,28 @@ public class runnerclass {
             System.out.print(i + " ");
         }
         System.out.println();
-        mergesort.mergesort(marr);
+        int n= marr.length;
+        mergesort.mergesort(marr,0,n-1);
         System.out.println("After sorting");
         for(int i:marr){
             System.out.print(i + " ");
         }
+
+        System.out.println();
+        int[] qarr=arr.clone();
+        System.out.println("before sorting");
+        for(int i:qarr){
+            System.out.print(i + " ");
+        }
+        System.out.println();
+        int m= qarr.length;
+        quicksort.quicksort(qarr,0,m-1);
+        System.out.println("After sorting");
+        for(int i:qarr){
+            System.out.print(i + " ");
+        }
+
+
+
     }
 }
